@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="copyright" content="Hak Cipta &copy; 2024 Derry. Semua hak dilindungi.">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Derry</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+         body {
+            background-color: #f4f6f9;
+            color: #212529;
+            font-family: 'Arial', sans-serif;
+        }
+
+        .navbar {
+            background-color: #3c6e71;
+        }
+
+        .navbar a {
+            color: white;
+        }
+
+        .navbar a:hover {
+            color: #d9d9d9;
+        }
+
+        .text-primary {
+            color: #3c6e71 !important;
+        }
+
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeIn 1s ease-out forwards;
+        }
+
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        footer {
+            background-color: #3c6e71;
+            color: white;
+            padding: 1rem;
+        }
+    </style>
+    <style>
+        body {
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+    </style>
+    <style>
+        .navbar .nav-link.active {
+            background-color: #2b4f52;
+            color: white !important;
+            border-radius: 100px;
+        }
+        body {
+            background-color: #f4f6f9;
+            color: #212529;
+            font-family: 'Arial', sans-serif;
+        }
+
+        .navbar {
+            background-color: #3c6e71;
+        }
+
+        .navbar a {
+            color: white;
+        }
+
+        .navbar a:hover {
+            color: #d9d9d9;
+        }
+
+        .text-primary {
+            color: #3c6e71 !important;
+        }
+
+        footer {
+            background-color: #3c6e71;
+            color: white;
+            padding: 1rem;
+        }
+
+        .contact-icon {
+            font-size: 3rem;
+            margin: 1rem;
+            color: #3c6e71;
+            transition: transform 0.3s ease, color 0.3s ease;
+        }
+
+        .contact-icon:hover {
+            transform: scale(1.1);
+            color: #2b4f52;
+        }
+
+        .contact-text {
+            font-size: 1rem;
+            color: #3c6e71;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Biografi Diri</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contact Section -->
+    <div class="container text-center mt-5">
+        <h2 class="text-primary mb-4">Hubungi Saya</h2>
+        <p>Klik salah satu ikon di bawah ini untuk menghubungi saya:</p>
+        <div class="row justify-content-center">
+            <!-- Email -->
+            <div class="col-md-4">
+                <a href="mailto:derryderry958@gmail.com?subject=Halo Derry&body=Halo, saya ingin menghubungi Anda." class="contact-icon d-block">
+                    <i class="fas fa-envelope"></i>
+                </a>
+                <p class="contact-text">derryderry958@gmail.com</p>
+            </div>
+            <!-- Instagram -->
+            <div class="col-md-4">
+                <a href="https://www.instagram.com/d_e_r_r_y__1" target="_blank" class="contact-icon d-block">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <p class="contact-text">@d_e_r_r_y__1</p>
+            </div>
+            <!-- Discord -->
+            <div class="col-md-4">
+                <a href="https://discord.com/channels/@Fuhaku_Forever#2377" target="_blank" class="contact-icon d-block">
+                    <i class="fab fa-discord"></i>
+                </a>
+                <p class="contact-text">Fuhaku_Forever#2377</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-center">
+        <p>&copy; 2024 Derry. Semua hak dilindungi. Dilarang menyalin tanpa izin!</p>
+    </footer>
+
+    <!-- Script -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"></script>
+</body>
+</html>

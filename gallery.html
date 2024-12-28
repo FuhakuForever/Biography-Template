@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="copyright" content="Hak Cipta &copy; 2024 Derry. Semua hak dilindungi.">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - UTS Derry</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+         body {
+            background-color: #f4f6f9;
+            color: #212529;
+            font-family: 'Arial', sans-serif;
+        }
+
+        .navbar {
+            background-color: #3c6e71;
+        }
+
+        .navbar a {
+            color: white;
+        }
+
+        .navbar a:hover {
+            color: #d9d9d9;
+        }
+
+        .text-primary {
+            color: #3c6e71 !important;
+        }
+
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeIn 1s ease-out forwards;
+        }
+
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        footer {
+            background-color: #3c6e71;
+            color: white;
+            padding: 1rem;
+        }
+    </style>
+    <style>
+        body {
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+    </style>
+    <style>
+        .navbar .nav-link.active {
+            background-color: #2b4f52;
+            color: white !important;
+            border-radius: 100px;
+        }
+        body {
+            background-color: #f4f6f9;
+            color: #212529;
+            font-family: 'Arial', sans-serif;
+        }
+        .navbar {
+            background-color: #3c6e71;
+        }
+        .navbar a {
+            color: white;
+        }
+        .navbar a:hover {
+            color: #d9d9d9;
+        }
+        footer {
+            background-color: #3c6e71;
+            color: white;
+            padding: 1rem;
+        }
+        .gallery-container {
+            padding: 2rem;
+        }
+        .gallery-item {
+            overflow: hidden;
+            border-radius: 10px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            aspect-ratio: 4 / 3;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+        }
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+        .gallery-item:hover {
+            transform: scale(1.02);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+        .info-text {
+            text-align: center;
+            margin-bottom: 2rem;
+            font-style: italic;
+            color: #6c757d;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Gallery</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="gallery.html">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Gallery Section -->
+    <div class="container gallery-container fade-in">
+        <h2 class="text-center text-primary mb-4">Gallery</h2>
+        <p class="info-text">Silakan klik foto untuk mendapatkan keterangan lebih detail</p>
+        <div class="row g-4">
+            <!-- Image Cards -->
+            <!-- Foto 1 -->
+            <div class="col-md-4">
+                <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#photoModal" data-title="Suasana sebelum Presiden tiba" data-caption="Suasana sebelum bapak Presiden RI Joko Widodo tiba di XII Koto Kampar">
+                    <img src="image/1.jpg" alt="Foto 1">
+                </div>
+            </div>
+            <!-- Foto 2 -->
+            <div class="col-md-4">
+                <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#photoModal" data-title="Foto bersama Menteri PUPR" data-caption="Moment bersama Menteri PUPR Bapak Basuki Hadimuljono">
+                    <img src="image/2.jpg" alt="Foto 2">
+                </div>
+            </div>
+            <!-- Foto 3 -->
+            <div class="col-md-4">
+                <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#photoModal" data-title="Delegasi Kampar di FLS2N" data-caption="Delegasi Kampar di Kontes FLS2N Tingkat Provinsi">
+                    <img src="image/3.jpg" alt="Foto 3">
+                </div>
+            </div>
+            <!-- Foto 4 -->
+            <div class="col-md-4">
+                <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#photoModal" data-title="Hari Keterbukaan Informasi Nasional" data-caption="Foto bersama pada acara Hari Keterbukaan Informasi Nasional">
+                    <img src="image/4.jpg" alt="Foto 4">
+                </div>
+            </div>
+            <!-- Foto 5 -->
+            <div class="col-md-4">
+                <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#photoModal" data-title="Foto bersama Fatin Shidqia" data-caption="Foto bersama Fatin Shidqia pada acara Bagholek Godang">
+                    <img src="image/5.jpg" alt="Foto 5">
+                </div>
+            </div>
+            <!-- Foto 6 -->
+            <div class="col-md-4">
+                <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#photoModal" data-title="Narasumber di Radio Kampar" data-caption="Moment pada saat saya menjadi narasumber di Radio Kampar">
+                    <img src="image/6.jpg" alt="Foto 6">
+                </div>
+            </div>
+            <!-- Foto 7 -->
+            <div class="col-md-4">
+                <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#photoModal" data-title="Delegasi Kecamatan untuk DPRD Kampar" data-caption="Foto bersama delegasi kecamatan pada Rapat Paripurna DPRD Kampar">
+                    <img src="image/7.jpg" alt="Foto 7">
+                </div>
+            </div>
+            <!-- Foto 8 -->
+            <div class="col-md-4">
+                <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#photoModal" data-title="FLS2N Tingkat Provinsi" data-caption="Moment pada saat saya tampil di kontes FLS2N Tingkat Provinsi">
+                    <img src="image/8.jpg" alt="Foto 8">
+                </div>
+            </div>
+            <!-- Foto 9 -->
+            <div class="col-md-4">
+                <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#photoModal" data-title="Juara Story Telling Tingkat Provinsi" data-caption="Menjuarai Dua Lomba Story Telling Tingkat Kabupaten dan Provinsi">
+                    <img src="image/9.jpg" alt="Foto 9">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="photoModal" tabindex="-1" aria-labelledby="photoModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="photoModalLabel"></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <img id="modalImage" src="" alt="Modal Foto" class="img-fluid mb-3">
+                    <p id="modalCaption"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-center">
+        <p>&copy; 2024 Derry. Semua hak dilindungi. Dilarang menyalin tanpa izin!</p>
+    </footer>
+
+    <!-- Script -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"></script>
+    <script>
+        // Handle modal content
+        document.querySelectorAll('.gallery-item').forEach(item => {
+            item.addEventListener('click', function() {
+                const title = this.getAttribute('data-title');
+                const caption = this.getAttribute('data-caption');
+                const imgSrc = this.querySelector('img').getAttribute('src');
+                document.getElementById('photoModalLabel').innerText = title;
+                document.getElementById('modalCaption').innerText = caption;
+                document.getElementById('modalImage').setAttribute('src', imgSrc);
+            });
+        });
+    </script>
+</body>
+</html>

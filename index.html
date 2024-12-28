@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="copyright" content="Hak Cipta &copy; 2024 Derry. Semua hak dilindungi.">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biografi Saya - UTS Derry</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f4f6f9;
+            color: #212529;
+            font-family: 'Arial', sans-serif;
+        }
+
+        .navbar {
+            background-color: #3c6e71;
+        }
+
+        .navbar a {
+            color: white;
+        }
+
+        .navbar a:hover {
+            color: #d9d9d9;
+        }
+
+        .text-primary {
+            color: #3c6e71 !important;
+        }
+
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeIn 1s ease-out forwards;
+        }
+
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        footer {
+            background-color: #3c6e71;
+            color: white;
+            padding: 1rem;
+        }
+    </style>
+    <style>
+        body {
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+    </style>
+    <style>
+        .navbar .nav-link.active {
+            background-color: #2b4f52;
+            color: white !important;
+            border-radius: 100px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Biografi Diri</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>                    
+                </ul>
+            </div>
+        </div>
+    </nav>    
+    <!-- Hero Section -->
+    <div class="container text-center mt-5 fade-in">
+        <h1 class="display-4">Halo, Saya <span class="text-primary">Derry</span></h1>
+        <p class="lead">"Kegagalan adalah bagian dari perjalanan menuju keberhasilan, bukan akhir dari segalanya." - Albert Einstein</p>
+        <img src="image/foto_sample.jpg" alt="Foto Diri" class="img-fluid rounded-circle mt-3" style="max-width: 200px;">
+    </div>
+
+    <!-- Identitas Diri -->
+    <div class="container mt-5 fade-in">
+        <h2 class="text-center text-primary mb-4">Identitas Diri</h2>
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <table class="table table-bordered table-striped shadow-sm">
+                    <tbody>
+                        <tr>
+                            <th>Nama</th>
+                            <td>Derry</td>
+                        </tr>
+                        <tr>
+                            <th>Tempat, Tanggal Lahir</th>
+                            <td>Bangkinang, 12 Agustus</td>
+                        </tr>
+                        <tr>
+                            <th>Alamat</th>
+                            <td>Bangkinang Kota</td>
+                        </tr>
+                        <tr>
+                            <th>Email</th>
+                            <td>derryderry958@gmail.com</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!-- Keahlian -->
+    <div class="container mt-5 fade-in">
+        <h2 class="text-center text-primary mb-4">Keahlian</h2>
+        <div class="row text-center">
+            <div class="col-md-6 mb-4">
+                <div class="card shadow-sm border-0">
+                    <div class="card-body">
+                        <h4 class="card-title text-primary">Musik Tradisional</h4>
+                        <p class="card-text">
+                            Katepak, Gong, Rebana, Kompang, Calempong Tingkah (Anakan), Tambor
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 mb-4">
+                <div class="card shadow-sm border-0">
+                    <div class="card-body">
+                        <h4 class="card-title text-primary">Programming</h4>
+                        <p class="card-text">
+                            Python, Java, C++ (Masih Pemula/Belajar)
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hobi -->
+    <div class="container mt-5 fade-in">
+        <h2 class="text-center text-primary mb-4">Hobi</h2>
+        <ul class="list-group list-group-flush shadow-sm text-center">
+            <li class="list-group-item">Membaca buku teknologi dan pengembangan diri</li>
+            <li class="list-group-item">Bermain game (GTA V Roleplay, Rainbow Six Siege, Valorant)</li>
+            <li class="list-group-item">Olahraga seperti jogging dan latihan fisik sederhana (push-up, sit-up)</li>
+        </ul>
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-center">
+        <p>&copy; 2024 Derry. Semua hak dilindungi. Dilarang menyalin tanpa izin!</p>
+    </footer>
+
+    <!-- Script -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"></script>
+
+</body>
+</html>

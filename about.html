@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="copyright" content="Hak Cipta &copy; 2024 Derry. Semua hak dilindungi.">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Saya</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Warna yang lebih kalem */
+        body {
+            background-color: #f4f6f9; /* Latar belakang netral */
+            color: #212529; /* Teks gelap */
+        }
+        
+        .navbar {
+            background-color: #3c6e71; /* Biru pastel yang kalem */
+        }
+        
+        .navbar a {
+            color: #ffffff;
+        }
+
+        .navbar a:hover {
+            color: #f8f9fa;
+        }
+        
+        .text-primary {
+            color: #4caf50 !important; /* Hijau pastel untuk aksen */
+        }
+        
+        .footer {
+            background-color: #3c6e71;
+            color: white;
+            padding: 1rem;
+        }
+        
+        .container {
+            transition: opacity 1s ease-in-out;
+        }
+        
+        /* Animasi Fade-in dan Slide-up */
+        .fade-in {
+            opacity: 0;
+            animation: fadeIn 1.5s forwards;
+        }
+
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+            }
+        }
+
+        .slide-up {
+            transform: translateY(30px);
+            opacity: 0;
+            animation: slideUp 1.5s forwards;
+        }
+
+        @keyframes slideUp {
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        .card {
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+        }
+
+        .list-group-item {
+            transition: background-color 0.3s ease;
+        }
+
+        .list-group-item:hover {
+            background-color: #e2e6ea;
+        }
+    </style>
+    <style>
+        body {
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+    </style>
+    <style>
+        .navbar .nav-link.active {
+        background-color: #2b4f52;
+        color: white !important;
+        border-radius: 100px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Biografi Diri</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>                    
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="container text-center mt-5 fade-in">
+        <h1 class="display-4">Halo, Saya <span class="text-primary">Derry</span></h1>
+        <p class="lead">“Hal yang paling penting adalah menikmati hidupmu, menjadi bahagia, apa pun yang terjadi.” - Audrey Hepburn</p>
+        <img src="image/foto_sample.jpg" alt="Foto Diri" class="img-fluid rounded-circle mt-3 shadow" style="max-width: 300px;">
+    </div>
+
+    <div class="container mt-5 fade-in">
+        <!-- Riwayat Pendidikan -->
+        <section id="education" class="mb-5">
+            <h2 class="text-primary text-center mb-4">Riwayat Pendidikan</h2>
+            <ul class="list-group list-group-flush shadow-sm">
+                <li class="list-group-item">
+                    <strong>2024 - Present:</strong> S1 Teknik Informatika, Universitas Pahlawan Tuanku Tambusai
+                </li>
+                <li class="list-group-item">
+                    <strong>2020 - 2023:</strong> SMA Negeri 1 Bangkinang Kota
+                </li>
+                <li class="list-group-item">
+                    <strong>2017 - 2020:</strong> SMP Negeri 2 Bangkinang Kota
+                </li>
+                <li class="list-group-item">
+                    <strong>2011 - 2017:</strong> SD Negeri 009 Bangkinang Kota </li>
+            </ul>
+        </section>
+
+        <!-- Pengalaman -->
+        <section id="experience" class="mb-5 slide-up">
+            <h2 class="text-primary text-center mb-4">Pengalaman</h2>
+            <ul class="list-group list-group-flush shadow-sm">
+                <li class="list-group-item">
+                    <strong>Freelancer (2020 - Sekarang):</strong> Penulis, penerjemah, dan pengisi suara.
+                </li>
+                <li class="list-group-item">
+                    <strong>Pemain Musik Tradisional (2018 - Sekarang):</strong> Mengisi acara resmi seperti:
+                    <ul class="mt-2">
+                        <li>Penyambutan Presiden RI Ir. Jokowi Dodo di acara peresmian Jalan Tol Ruas Bangkinang XII Koto Kampar.</li>
+                        <li>Penyambutan Menteri POLKUMHAM Mahfud MD di Labersa Hotel pada Hari Keterbukaan Informasi Nasional.</li>
+                        <li>Penyambutan Menteri Kemenparekraf di XII Koto Kampar (Ulu Kasok).</li>
+                        <li>FLS2N Tingkat Kabupaten Hingga Provinsi</li>
+                        <li>Lomba Musikalilas Puisi Tingkat Provinsi</li>
+                        <li>Pelantikan Ninik Mamak.</li>
+                        <li>Acara-acara adat istiadat.</li>
+                        <li>Acara Pernikahan/Resepsi/Malam Dekorasi</li>
+                    </ul>
+                </li>
+                <li class="list-group-item">
+                    <strong>Organisasi (2019 - Sekarang):</strong>
+                    <ul class="mt-2">
+                        <li>Kadiv Pengembangan Internal Forum Anak Tingkat Kecamatan (2021-2023).</li>
+                        <li>Staff Pengembangan Internal Forum Anak Tingkat Kabupaten (2021-2023).</li>
+                        <li>Ketua Forum Anak Tingkat Kecamatan (2019-2021).</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Prestasi -->
+        <section id="achievements" class="mb-5 slide-up">
+            <h2 class="text-primary text-center mb-4">Prestasi</h2>
+            <ul class="list-group list-group-flush shadow-sm">
+                <li class="list-group-item">
+                    <strong>Penghargaan Sebagai Kecamatan Terbaik se-Nasional Dalam Kategori Pengembangan Internal (2020):</strong> Kompetisi tingkat nasional.
+                </li>
+                <li class="list-group-item">
+                    <strong>Juara 3 Lomba Story Telling (2020):</strong> Kompetisi tingkat provinsi.
+                </li>
+                <li class="list-group-item">
+                    <strong>Juara 1 Lomba Story Telling (2020):</strong> Kompetisi tingkat kabupaten.
+                </li>
+                <li class="list-group-item">
+                    <strong>Harapan 1 Lomba FLS2N (2019):</strong> Kompetisi tingkat provinsi.
+                </li>
+                <li class="list-group-item">
+                    <strong>Juara 1 Lomba FLS2N (2019):</strong> Kompetisi tingkat kabupaten.
+                </li>
+                <li class="list-group-item">
+                    <strong>Sertifikasi Strategi Meningkatkan Penjualan Produk (2024):</strong> Program Hallmar Business School dari Prakerja.
+                </li>
+                <li class="list-group-item">
+                    <strong>Sertifikasi Teknik Copywriting dengan SEO untuk Menjadi Spesialis Digital Marketing (2024):</strong> Program dari Skill Academy Ruangguru melalui Prakerja.
+                </li>
+            </ul>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-center">
+        <p>&copy; 2024 Derry. Semua hak dilindungi. Dilarang menyalin tanpa izin!</p>
+    </footer>
+
+    <!-- Script JS untuk Bootstrap dan Animasi -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"></script>
+    <script>
+        // Menambahkan animasi saat halaman dimuat
+        window.addEventListener('load', function() {
+            const fadeElements = document.querySelectorAll('.fade-in');
+            const slideUpElements = document.querySelectorAll('.slide-up');
+            
+            fadeElements.forEach((el) => el.classList.add('fade-in'));
+            slideUpElements.forEach((el) => el.classList.add('slide-up'));
+        });
+    </script>
+</body>
+</html>
